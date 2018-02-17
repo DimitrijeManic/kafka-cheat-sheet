@@ -72,6 +72,10 @@ Start a consumer from the beginning of the log
 ```
 kafka-console-consumer --bootstrap-server localhost:9092 --topic my-topic --from-beginning
 ```
+Consume messages and display message keys
+```
+kafka-console-consumer --bootstrap-server localhost:9092 --topic my-topic --property print.key=true --property key.seperator=, --from-beginning
+```
 Consume 1 message
 ```
 kafka-console-consumer --bootstrap-server localhost:9092 --topic my-topic  --max-messages 1
